@@ -1,0 +1,35 @@
+{
+  "id": "/",
+  "name": "Cantrix AI — كامتريكس إيه آي الخارق",
+  "short_name": "Cantrix AI",
+  "description": "مشروع ونظام ذكاء اصطناعي متكامل واحترافي من الجيل المتقدم، طوّره Rayan. ذكاء بلا حدود · بحث مباشر فوري · استدلال فائق بدون هلوسة.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070604",
+  "theme_color": "#f59e0b",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["productivity", "utilities", "education"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

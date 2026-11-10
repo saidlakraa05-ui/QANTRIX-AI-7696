@@ -1,0 +1,10 @@
+{
+  "name": "Lord AI",
+  "description": "مساعد ذكاء اصطناعي فائق التطور، عالمي، متعدد اللغات، وصوتي، طوّره Rayan. ذكاء بلا حدود. صوت بلا حواجز. نتائج حقيقية.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,235 @@
+import { NovaToolDef } from '../types';
+
+export const NOVA_TOOLS: NovaToolDef[] = [
+  {
+    id: 'social-media',
+    name: 'كاتب منشورات التواصل الاجتماعي',
+    nameEn: 'Social Media Copywriter',
+    description: 'توليد منشورات إعلانية وتفاعلية جذابة لـ Instagram و TikTok و Facebook مع وسوم وHooks قوية.',
+    category: 'content',
+    icon: 'Share2',
+    fields: [
+      {
+        key: 'platform',
+        label: 'المنصة المستهدفة',
+        placeholder: 'اختر المنصة',
+        type: 'select',
+        options: [
+          { value: 'Instagram Reels & Post', label: 'إنستغرام (Instagram Reels & Posts)' },
+          { value: 'TikTok Video Hook & Script', label: 'تيك توك (TikTok Hook & Video Idea)' },
+          { value: 'Facebook Viral Post', label: 'فيسبوك (Facebook Post)' },
+          { value: 'LinkedIn Thought Leadership', label: 'لينكد إن (LinkedIn Professional)' },
+          { value: 'X / Twitter Thread', label: 'منصة إكس (Twitter Thread)' },
+        ],
+      },
+      {
+        key: 'topic',
+        label: 'موضوع المنشور أو المنتج',
+        placeholder: 'مثال: إطلاق كورس جديد، نصائح إنتاجية، عرض تخفيض خاص بمناسبة نهاية الأسبوع...',
+        type: 'textarea',
+      },
+    ],
+  },
+  {
+    id: 'resume',
+    name: 'كاتب السيرة الذاتية ورسائل التقديم',
+    nameEn: 'CV & Cover Letter Architect',
+    description: 'صياغة نبذة مهنية مبهرة ورسائل تغطية (Cover Letter) مخصصة متوافقة مع أنظمة الفرز الذكي ATS.',
+    category: 'career',
+    icon: 'FileText',
+    fields: [
+      {
+        key: 'role',
+        label: 'المسمى الوظيفي المستهدف',
+        placeholder: 'مثال: مدير تسويق رقمي، مهندس برمجيات، محاسب قانوني...',
+        type: 'text',
+      },
+      {
+        key: 'experience',
+        label: 'ملخص خبراتك وإنجازاتك الحالية',
+        placeholder: 'اذكر نبذة عن دراستك، سنوات الخبرة، وأبرز الإنجازات أو المشاريع التي قمت بها...',
+        type: 'textarea',
+      },
+    ],
+  },
+  {
+    id: 'study',
+    name: 'المساعد الدراسي والتلخيص والاختبارات',
+    nameEn: 'Study Coach & Quiz Generator',
+    description: 'تلخيص المحاضرات والكتب، استخراج المفاهيم الجوهرية، وتوليد أسئلة مراجعة تفاعلية مع الحلول.',
+    category: 'education',
+    icon: 'GraduationCap',
+    fields: [
+      {
+        key: 'content',
+        label: 'النص أو المحاضرة أو الموضوع المراد دراسته',
+        placeholder: 'الصق النص الدراسي هنا أو لخص الفكرة التي تريد مراجعتها بدقة...',
+        type: 'textarea',
+      },
+    ],
+  },
+  {
+    id: 'startup-ideas',
+    name: 'مولد أفكار المشاريع والمحتوى',
+    nameEn: 'Startup & Content Innovator',
+    description: 'ابتكار أفكار أعمال تجارية ومشاريع ناشئة وزوايا محتوى مبتكرة مع خطة ربح واضحة وميزة تنافسية.',
+    category: 'business',
+    icon: 'Lightbulb',
+    fields: [
+      {
+        key: 'industry',
+        label: 'المجال أو الاهتمام',
+        placeholder: 'مثال: الذكاء الاصطناعي، التجارة الإلكترونية في المغرب، السياحة البديلة، الأغذية الصحية...',
+        type: 'text',
+      },
+    ],
+  },
+  {
+    id: 'ecommerce',
+    name: 'مساعد المتاجر وإعلانات البيع',
+    nameEn: 'E-commerce & Ads Specialist',
+    description: 'كتابة صفحات بيع عالية التحويل، أوصاف منتجات جذابة، ونصوص إعلانية مقنعة تزيد المبيعات.',
+    category: 'business',
+    icon: 'ShoppingBag',
+    fields: [
+      {
+        key: 'productName',
+        label: 'اسم المنتج أو الخدمة',
+        placeholder: 'مثال: مكنسة ذكية لاسلكية، عطر شرقي فاخر، ساعة رياضية مقاومة للماء...',
+        type: 'text',
+      },
+      {
+        key: 'features',
+        label: 'أهم المميزات والسعر والمستهدفين',
+        placeholder: 'ما هي مشكلة العميل التي يحلها المنتج؟ ما الذي يجعله فريداً؟',
+        type: 'textarea',
+      },
+    ],
+  },
+  {
+    id: 'translator',
+    name: 'المترجم الذكي بين كل اللغات',
+    nameEn: 'Universal Smart Translator',
+    description: 'ترجمة عميقة تفهم السياق، المعنى الضمني، واللهجات المحلية بما فيها الدارجة المغربية بكل طلاقة.',
+    category: 'languages',
+    icon: 'Languages',
+    fields: [
+      {
+        key: 'fromLang',
+        label: 'لغة المصدر',
+        placeholder: 'تلقائي (أو حدد لغة المصدر)',
+        type: 'text',
+      },
+      {
+        key: 'toLang',
+        label: 'اللغة أو اللهجة المستهدفة',
+        placeholder: 'مثال: الدارجة المغربية، الإنجليزية، الفرنسية، الألمانية، الإسبانية...',
+        type: 'text',
+      },
+      {
+        key: 'text',
+        label: 'النص المطلوب ترجمته',
+        placeholder: 'اكتب أو الصق النص هنا...',
+        type: 'textarea',
+      },
+    ],
+  },
+  {
+    id: 'planner',
+    name: 'المخطط اليومي والأسبوعي الذكي',
+    nameEn: 'Productivity & Schedule Planner',
+    description: 'تنظيم جدولك، تقسيم الأهداف المعقدة إلى مهام مجدولة، وحساب أوقات التركيز والراحة.',
+    category: 'productivity',
+    icon: 'Calendar',
+    fields: [
+      {
+        key: 'type',
+        label: 'نوع المخطط',
+        placeholder: 'اختر المدى الزمني',
+        type: 'select',
+        options: [
+          { value: 'daily', label: 'مخطط يومي عالي التركيز (Daily Focus)' },
+          { value: 'weekly', label: 'خطة أسبوعية متوازنة (Weekly Roadmap)' },
+        ],
+      },
+      {
+        key: 'tasks',
+        label: 'المهام والأهداف والالتزامات الحالية',
+        placeholder: 'اكتب كل ما تحتاج إنجازه وأي مواعيد نهائية تلتزم بها...',
+        type: 'textarea',
+      },
+    ],
+  },
+  {
+    id: 'business-analyzer',
+    name: 'محلل أفكار الأعمال والجدوى',
+    nameEn: 'Business & Feasibility Analyzer',
+    description: 'تقييم الجدوى الاقتصادية، تحليل SWOT متكامل، ودراسة المخاطر وفرص التوسع لأي فكرة استثمارية.',
+    category: 'business',
+    icon: 'TrendingUp',
+    fields: [
+      {
+        key: 'businessIdea',
+        label: 'وصف الفكرة أو المشروع التجاري',
+        placeholder: 'اشرح فكرة المشروع، رأس المال التقريبي، وموقع التنفيذ المقترح...',
+        type: 'textarea',
+      },
+    ],
+  },
+  {
+    id: 'messaging',
+    name: 'كاتب رسائل WhatsApp و Email احترافية',
+    nameEn: 'Executive Messaging Drafter',
+    description: 'صياغة رسائل دبلوماسية، تجارية، أو ودية بأعلى درجات اللباقة والإقناع باللغة المناسبة.',
+    category: 'content',
+    icon: 'Mail',
+    fields: [
+      {
+        key: 'channel',
+        label: 'وسيلة الإرسال',
+        placeholder: 'اختر الوسيلة',
+        type: 'select',
+        options: [
+          { value: 'WhatsApp Business', label: 'رسالة واتساب احترافية (WhatsApp)' },
+          { value: 'Formal Email', label: 'بريد إلكتروني رسمي (Formal Email)' },
+          { value: 'Follow-up Email', label: 'رسالة متابعة وتذكير (Follow-up)' },
+          { value: 'Client Apology', label: 'اعتذار مهني للعميل وحل مشكلة' },
+        ],
+      },
+      {
+        key: 'recipient',
+        label: 'الجهة أو الشخص المستلم',
+        placeholder: 'مثال: المدير التنفيذي، عميل جديد، مورد، زميل عمل...',
+        type: 'text',
+      },
+      {
+        key: 'purpose',
+        label: 'الهدف من الرسالة والنقاط الواجب ذكرها',
+        placeholder: 'اكتب الغرض الأساسي، مثل: طلب اجتماع، تفاوض على سعر، توضيح شروط...',
+        type: 'textarea',
+      },
+    ],
+  },
+  {
+    id: 'language-tutor',
+    name: 'مساعد ومصحح تعلم اللغات الصوتي',
+    nameEn: 'Interactive Language Tutor',
+    description: 'محادثة تفاعلية لتعلم اللغات، تصحيح الأخطاء النحوية فورياً، وشرح القواعد وممارسة النطق.',
+    category: 'languages',
+    icon: 'BookOpen',
+    fields: [
+      {
+        key: 'targetLang',
+        label: 'اللغة التي تريد ممارستها وتعلمها',
+        placeholder: 'مثال: الإنجليزية، الفرنسية، الإسبانية، الألمانية، التركية...',
+        type: 'text',
+      },
+      {
+        key: 'userSentence',
+        label: 'الجملة أو النص الذي ترغب بفحصه أو بدء المحادثة به',
+        placeholder: 'اكتب جملتك باللغة المستهدفة ليقوم Nova بفحصها وتصحيحها ومحاورتك...',
+        type: 'textarea',
+      },
+    ],
+  },
+];
